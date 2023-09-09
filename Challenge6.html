@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var tien = [25, 555, 44];
+        var tongTien = [];
+        var tienTip = [];
+
+
+        function tinhTienTip(tien) {
+            let tienTip
+
+            if (tien > 300) {
+                tienTip = tien * 0.2
+            }
+            if ((tien > 50) && (tien < 300)) {
+                tienTip = tien * 0.15
+            }
+            if (tien < 50) {
+                tienTip = 0
+            }
+            return tienTip
+        }
+
+        function dsTienTip(inputArray) {
+            var length = inputArray.length;
+            for (var i = 0; i < length; i++) {
+                tienTip[i] = tinhTienTip(inputArray[i]);
+            }
+        }
+
+
+        function dsTien(billArray) {
+            var length = billArray.length;
+            for (var i = 0; i < length; i++) {
+                tongTien[i] = billArray[i] + tinhTienTip(billArray[i]);
+            }
+        }
+
+
+
+        dsTienTip(tien);
+        dsTien(tien);
+
+        console.log(`The bills are: ${tien}`);
+        console.log(`The calculated tips are: ${tienTip}`);
+        console.log(`The calculated totals are: ${tongTien}`);
+    </script>
+</body>
+
+</html>

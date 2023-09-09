@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhDiemTB(diem1, diem2, diem3) {
+            let diemTB = (diem1 + diem2 + diem3) / 3
+            return diemTB
+        }
+
+
+        //Data 1
+        let diemTBDolphin = Math.round(tinhDiemTB(96, 108, 89))
+        let diemTBKoala = Math.round(tinhDiemTB(88, 91, 110))
+
+        function kiemTra(diemTBDolphin, diemTBKoala) {
+            if ((diemTBDolphin > diemTBKoala) && (diemTBDolphin > 100))
+                console.log(`Dolphin's thang ${diemTBDolphin}, koala's thua ${diemTBDolphin}`)
+        }
+        if ((diemTBDolphin < diemTBKoala) && (diemTBKoala > 100)) {
+            console.log(`Koala's thang ${diemTBKoala} va dolphins thua ${diemTBDolphin}.`)
+        }
+        if ((diemTBDolphin = diemTBKoala) && (diemTBKoala > 100) && (diemTBDolphin > 100)) {
+            console.log("ca 2 hoa")
+        }
+        if ((diemTBKoala < 100) && (diemTBDolphin < 100)) {
+            console.log("khong ai thang")
+        }
+        //Data Bonus1
+        let diemTBDolphinBonus1 = Math.round(tinhDiemTB(97, 112, 101))
+        let diemTBKoalaBonus1 = Math.round(tinhDiemTB(109, 95, 123))
+
+        function kiemTra(diemTBDolphinBonus1, diemTBKoalaBonus1) {
+            if ((diemTBDolphinBonus1 > diemTBKoalaBonus1) && (diemTBDolphinBonus1 > 100))
+                console.log(`Dolphin's thang ${diemTBDolphinBonus1}, koala's thua ${diemTBKoalaBonus1}`)
+        }
+        if ((diemTBDolphinBonus1 < diemTBKoalaBonus1) && (diemTBKoalaBonus1 > 100)) {
+            console.log(`Koala's thang ${diemTBKoalaBonus1} va dolphins thua ${diemTBDolphinBonus1}.`)
+        }
+        if ((diemTBDolphinBonus1 == diemTBKoalaBonus1) && (diemTBKoalaBonus1 > 100) && (diemTBDolphinBonus1 > 100)) {
+            console.log("ca 1 hoa")
+        }
+        if ((diemTBKoalaBonus1 < 100) && (diemTBDolphinBonus1 < 100)) {
+            console.log("khong ai thang")
+        }
+
+        //Data Bonus2
+        let diemTBDolphinBonus2 = Math.round(tinhDiemTB(97, 112, 101))
+        let diemTBKoalaBonus2 = Math.round(tinhDiemTB(109, 95, 106))
+
+        function kiemTra(diemTBDolphinBonus2, diemTBKoalaBonus2) {
+            if ((diemTBDolphinBonus2 > diemTBKoalaBonus2) && (diemTBDolphinBonus2 > 100))
+                console.log(`Dolphin's thang ${diemTBDolphinBonus2}, koala's thua ${diemTBKoalaBonus2}`)
+        }
+        if ((diemTBDolphinBonus2 < diemTBKoalaBonus2) && (diemTBKoalaBonus2 > 100)) {
+            console.log(`Koala's thang ${diemTBKoalaBonus2} va dolphins thua ${diemTBDolphinBonus2}.`)
+        }
+        if ((diemTBDolphinBonus2 == diemTBKoalaBonus2) && (diemTBKoalaBonus2 > 100) && (diemTBDolphinBonus2 > 100)) {
+            console.log("ca 2 hoa")
+        }
+        if ((diemTBKoalaBonus2 < 100) && (diemTBDolphinBonus2 < 100)) {
+            console.log("khong ai thang")
+        }
+    </script>
+</body>
+
+</html>

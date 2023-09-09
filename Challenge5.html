@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhDiemTB(diem1, diem2, diem3) {
+            let diemTB = (diem1 + diem2 + diem3) / 3
+            return diemTB
+        }
+
+
+        //Data 1
+        let diemTBDolphin = Math.round(tinhDiemTB(44, 23, 71))
+        let diemTBKoala = Math.round(tinhDiemTB(65, 54, 49))
+
+        {
+            if ((diemTBDolphin > diemTBKoala * 2))
+                console.log(`Dolphin's thang ${diemTBDolphin}, koala's thua ${diemTBDolphin}`)
+        }
+        if ((diemTBDolphin * 2 < diemTBKoala)) {
+            console.log(`Koala's thang ${diemTBKoala} va dolphins thua ${diemTBDolphin}.`)
+        } else {
+            console.log("khong ai thang")
+        }
+        //Data 2
+        let diemTBDolphin2 = Math.round(tinhDiemTB(85, 54, 41))
+        let diemTBKoala2 = Math.round(tinhDiemTB(23, 34, 27))
+
+
+        if ((diemTBDolphin2 > diemTBKoala2 * 2)) {
+            console.log(`Dolphin's thang ${diemTBDolphin2}, koala's thua ${diemTBKoala2}`)
+        }
+        if ((diemTBDolphin2 * 2 < diemTBKoala2)) {
+            console.log(`Koala's thang ${diemTBKoala2} va dolphins thua ${diemTBDolphin2}.`)
+        }
+    </script>
+</body>
+
+</html>
